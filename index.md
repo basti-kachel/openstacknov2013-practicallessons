@@ -9,3 +9,27 @@ Get the **sources** on GitHub:
 
 * <https://github.com/basti-kachel/openstacknov2013-practicallessons>
 * <https://github.com/fghaas/openstacknov2013-practicallessons>
+
+# What's this about?
+
+# Who are we?
+
+## Sebastian Kachel
+
+## Florian Haas
+
+# What was our challenge to solve?
+
+# How did we do it?
+
+## Highly available storage
+
+## Highly available networking
+
+## Highly available OpenStack services and APIs
+
+## Highly available Nova guests
+
+# How did this affect our organization?
+
+# Get in touch!
