@@ -15,7 +15,10 @@ PDF_BACKEND ?= beamer
 # --self-contained options for an HTML file that uses data URI and
 # thus doesn't require any external resources.
 %.html: %.md
-	pandoc --standalone --self-contained -f markdown -t $(SLIDESHOW_BACKEND) $< -o $@ 
+	pandoc --standalone --self-contained \
+	  --from markdown --to $(SLIDESHOW_BACKEND) \
+	  --css css/slidy-override.css \
+	  $< -o $@
 
 # Generate an PDF from the corresponding .md file, using Beamer.
 %.pdf: %.md
