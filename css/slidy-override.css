@@ -1,0 +1,86 @@
+/* General setup: define basic font and color. */
+body {
+  font-family: Arial, sans-serif;
+  color: gray;
+}
+
+/* The first page in the presentation. We use a fully-stretched
+   background image to accommodate varying browser sizes.
+   Text on the title page is in white. */
+.titlepage {
+  background-image: url('background-titlepage.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+/* The presentation title. We need to explicitly make it left-aligned
+   because the default Slidy template centers it, and we're using a
+   50% opaque background to make the white text visible against the
+   background image. We also need to override the padding defined in
+   the default Slidy CSS. */
+.titlepage .title {
+  width: 80%;
+  font-size: 36pt;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 30%;
+  background-color: rgba(0,0,0,0.5);
+  padding: 0.5% !important;
+}
+
+/* The author name(s) and presentation date. Same considerations as
+   for the presentation title, but with a smaller font. */
+.titlepage .author, .titlepage .date {
+  width: 80%;
+  font-size: 18pt;
+  text-align: left;
+  margin-left: 5%;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0.5% !important;
+}
+
+/* The "level1" slide is what amounts to a chapter title slide. We use
+   a black-to-white gradient for this, with white text. We use 20%
+   padding at the bottom of the slide, so that we don't get white text
+   on white background. */
+.level1 {
+  background: rgb(0,0,0); /* Old browsers */
+  background: -moz-linear-gradient(top, rgb(0,0,0) 0%, rgb(255,255,255) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,0,0)), color-stop(100%,rgb(255,255,255))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 100%); /* Opera 11.10+ */
+
+  color: white !important;
+
+  padding-bottom: 20%
+}
+
+/* By default, headings are light green. */
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(151,191,0);
+}
+
+/* Except on the first slide, where we need them in white. */
+.titlepage h1, .titlepage h2, .titlepage h3, .titlepage h4, .titlepage h5, .titlepage h6 {
+  color: white;
+}
+
+/* And the same applies to chapter titles. */
+.level1 h1, .level1 h2, .level1 h3, .level1 h4, .level1 h5, .level1 h6 {
+  color: white;
+}
+
+/* For slides, w use an all-around padding of 2% of the viewport. */
+div.slide {
+  padding: 2% !important;
+}
+
+/* The toolbar at the bottom of the slide and all links use the same
+   green as the headings, and we need to override the default CSS for
+   that. */
+.toolbar, a:link, a:visited {
+  color: rgb(151,191,0) !important;
+}
