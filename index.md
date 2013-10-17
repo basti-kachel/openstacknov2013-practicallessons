@@ -27,6 +27,8 @@ seasoned Unix/Linux sysadmin/devops guy who became involved in OpenStack in 2012
 	
 ## Florian Haas
 
+TODO: Add a few works about Florian
+
 # What was our challenge to solve?
 
 ### We musst bring hight availability in all services that we want use for our customers
