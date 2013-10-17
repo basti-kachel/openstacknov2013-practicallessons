@@ -66,30 +66,32 @@ Must start with high availability at the base of the system (IaaS)
 * We provide our customers service level agreement with high
   availability up to 99,99 %.
 
-
 # How did we do it?
 
 ## Highly available storage
 
-#### High Available Storage as base as data store to bring it 
-#### - to 24 x 7 days per week / 365 days in year online
-#### - scalable 
+* Highly available storage as base as data store to bring it 
+* to 24 x 7 days per week / 365 days in year online
+* scalable 
 
-![logo-ceph][3]
-[3]: logo-ceph.png "logo-ceph"
+![](logo-ceph.png)
 
-1. Ceph is a distributed object store and file system designed to provide excellent performance, reliability and scalability
-3. storage to store data with no datalost
-4. store cinder volumes, glance images, static data (S3) over radosgw, instances
-6. All data are high available
+## Why Ceph?
+
+* Ceph is a distributed object store and file system designed to provide excellent performance, reliability and scalability
+* storage to store data with no datalost
+* store cinder volumes, glance images, static data (S3) over radosgw, instances
+* All data are high available
 
 !picture with logical functionality (3 node)!
 
-7. working with 3 copies
-8. filesystem xfs
-9. 1TB Disk per OSD / 6 OSD per Node
-10. osd-journaling on seperate ssd 
-11. storage node with 8 x 1GBit/s Ports in trunk mode
+## How did we build our Ceph store?
+
+* working with 3 copies
+* filesystem xfs
+* 1TB Disk per OSD / 6 OSD per Node
+* osd-journaling on seperate ssd 
+* storage node with 8 x 1GBit/s Ports in trunk mode
 
 ## Highly available networking
 
