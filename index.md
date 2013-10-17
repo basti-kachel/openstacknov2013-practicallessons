@@ -106,7 +106,7 @@ Must start with high availability at the base of the system - **IaaS**
   
 ![](img/ha-network.png)
   
-TODO: add content  
+TODO: add content (explain scalable dhcp+l3)
 
 ## Highly available OpenStack services and APIs
 
