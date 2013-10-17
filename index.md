@@ -20,7 +20,7 @@ Solution from pixelpark`s high availability private Cloud
 	
 IT Cloud-Manager / IT Operator
 
-![](logo-pixelpark.png)
+![](img/logo-pixelpark.png)
 
 Seasoned Unix/Linux sysadmin/devops guy who became involved in
 OpenStack in 2012, when his company decided to lauch an OpenStack
@@ -38,7 +38,7 @@ TODO: Add a few works about Florian
 
 ## Ensure high availability for all services that we want use for our customers
 
-Must start with high availability at the base of the system (IaaS)
+Must start with high availability at the base of the system - **IaaS**
 
 # Why OpenStack?
 
@@ -49,12 +49,11 @@ Must start with high availability at the base of the system (IaaS)
 **departments:** concepts, project management, editorial, design,
   development & hosting
 
-![](pp-standorte.png)
+![](img/pp-standorte.png)
 
 ## Challenges
 
-* Hosting department needs benefits of cloud computing (automation &
-  process optimization, standardization, … )
+* Hosting department needs benefits of cloud computing
   
 * cloud software that is/become more than IaaS, that can be use by
   other departments like development
@@ -71,26 +70,37 @@ Must start with high availability at the base of the system (IaaS)
 ## Highly available storage
 
 * Highly available storage as base as data store to bring it 
+
 * to 24 x 7 days per week / 365 days in year online
+
 * scalable 
 
-![](logo-ceph.png)
+![](img/logo-ceph.png)
 
 ## Why Ceph?
 
-* Ceph is a distributed object store and file system designed to provide excellent performance, reliability and scalability
-* storage to store data with no datalost
-* store cinder volumes, glance images, static data (S3) over radosgw, instances
-* All data are high available
+* Ceph is a distributed object store and file system designed to provide excellent  performance, reliability and scalability
 
-!picture with logical functionality (3 node)!
+* storage to store data with no datalost
+
+* store cinder volumes, glance images, static data (S3) over radosgw, instances
+
+* All data are high available & scalable when we need more space 
+
+![](img/cloud-storage.png)
+
+* ceph is top base for storage
 
 ## How did we build our Ceph store?
 
 * working with 3 copies
+
 * filesystem xfs
+
 * 1TB Disk per OSD / 6 OSD per Node
-* osd-journaling on seperate ssd 
+ 
+* osd-journaling on seperate ssd
+ 
 * storage node with 8 x 1GBit/s Ports in trunk mode
 
 ## Highly available networking
@@ -100,27 +110,31 @@ Must start with high availability at the base of the system (IaaS)
 
 ## Highly available OpenStack services and APIs
 
-!picture pacemaker!
+TODO: add picture pacemaker
 
 * Pacemaker cluster with two controller nodes to bring horizon,
   keystone, glance, nova, rabbitmq, quantum-server & mysql database
   everytime online
 
-!picture HA-Controller-Nodes! 
+TODO: add picture logical functionality of controllers 
 
-1. active-backup (distributed)
-2. database in drdb 
-3. rabbitmg in drdb
-4. Raid 1 under drbd
+* active-backup (distributed)
+
+* database in drdb 
+
+* rabbitmg in drdb
+
+* Raid 1 under drbd
 
 
 ## Highly available Nova guests
 
 * to bring high availability in all services, we lets run instances in
   ceph-cluster too
+  
 * pacemaker cluster for nova services 
 
-!picture HA-Compute-Node!
+TODO: add picture logical functionality of computes 
 
 1. rbd mount unter /var/lib/nova/instances
 2. ocfs2 filesystem 
