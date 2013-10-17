@@ -18,7 +18,9 @@ Solution from pixelpark`s high availability private Cloud
 
 ## Sebastian Kachel 
 	
-IT Cloud-Manager / IT Operator @Pixelpark AG 
+IT Cloud-Manager / IT Operator
+![pixelpark-logo][1]
+[1]:logo-pixelpark.png "logo-pixelpark.png"
 
 seasoned Unix/Linux sysadmin/devops guy who became involved in OpenStack in 2012, when his company decided to lauch an OpenStack private cloud. Based in Berlin, Germany, he is one of the movers and shakers of all things OpenStack at Pixelpark
 
@@ -38,8 +40,8 @@ musst start with hight availability in base (IaaS)
 ##### full-service agency for multimedial kommunications & e-business solutions
 **departments:** konception, project management, editorial, design, development & hosting
 
-![pixelaprk-standorte][1]
-[1]: pp-standorte.png "pixelaprk-standorte"
+![pixelpark-standorte][2]
+[2]: pp-standorte.png "pixelpark-standorte"
 
 ##### hosting department needs benefits of cloud computing (automation & process optimization, standardization, … )
 
@@ -56,15 +58,60 @@ We think, OpenStack is the best base for Pixelpark as a full-service agency
 
 ## Highly available storage
 
-![logo-ceph][2]
-[2]: logo-ceph.png "logo-ceph"
+#### High Available Storage as base as data store to bring it 
+#### - to 24 x 7 days per week / 365 days in year online
+#### - scalable 
 
+![logo-ceph][3]
+[3]: logo-ceph.png "logo-ceph"
+
+1. Ceph is a distributed object store and file system designed to provide excellent performance, reliability and scalability
+3. storage to store data with no datalost
+4. store cinder volumes, glance images, static data (S3) over radosgw, instances
+6. All data are high available
+
+!picture with logical functionality (3 node)!
+
+7. working with 3 copies
+8. filesystem xfs
+9. 1TB Disk per OSD / 6 OSD per Node
+10. osd-journaling on seperate ssd 
+11. storage node with 8 x 1GBit/s Ports in trunk mode
 
 ## Highly available networking
 
+#### quantum-dhcp & l3-agent scalable over two nodes and pacemakercluster to monitor & control network services 
+
+
 ## Highly available OpenStack services and APIs
 
+!picture pacemaker!
+
+#### Pacemakercluster with two controller nodes to bring horizon, keystone, glance, nova, rabbitmq, quantum-server & mysql database everytime online
+
+!picture HA-Controller-Nodes! 
+
+1. active-backup (distributed)
+2. database in drdb 
+3. rabbitmg in drdb
+4. Raid 1 under drbd
+
+
 ## Highly available Nova guests
+
+#### to bring high availability in all services, we lets run instances in ceph-cluster too
+#### pacemaker cluster for nova services 
+
+!picture HA-Compute-Node!
+
+1. rbd mount unter /var/lib/nova/instances
+2. ocfs2 filesystem 
+3. own pool in ceph-cluster 
+4. need good network connection to storages
+5. 6 x 1GBit/s Ports on every compute
+
+
+
 
 # How did this affect our organization?
 
