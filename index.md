@@ -71,8 +71,6 @@ Must start with high availability at the base of the system - **IaaS**
 
 * Highly available storage as base as data store to bring it 
 
-* to 24 x 7 days per week / 365 days in year online
-
 * scalable 
 
 ![](img/logo-ceph.png)
@@ -83,13 +81,11 @@ Must start with high availability at the base of the system - **IaaS**
 
 * storage to store data with no datalost
 
-* store cinder volumes, glance images, static data (S3) over radosgw, instances
+* store cinder volumes, glance images, static data (S3) over radosgw & instances
+ 
+![](img/ha-storage.png)
 
-* All data are high available & scalable when we need more space 
-
-![](img/cloud-storage.png)
-
-* ceph is top base for storage
+* ceph is a top base for storage
 
 ## How did we build our Ceph store?
 
@@ -107,6 +103,10 @@ Must start with high availability at the base of the system - **IaaS**
 
 * quantum-dhcp & l3-agent scalable over two nodes and pacemakercluster
   to monitor & control network services
+  
+![](img/ha-network.png)
+  
+TODO: add content  
 
 ## Highly available OpenStack services and APIs
 
@@ -115,8 +115,8 @@ TODO: add picture pacemaker
 * Pacemaker cluster with two controller nodes to bring horizon,
   keystone, glance, nova, rabbitmq, quantum-server & mysql database
   everytime online
-
-TODO: add picture logical functionality of controllers 
+  
+![](img/ha-storage.png)
 
 * active-backup (distributed)
 
