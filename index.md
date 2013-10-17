@@ -95,14 +95,16 @@ Must start with high availability at the base of the system (IaaS)
 
 ## Highly available networking
 
-#### quantum-dhcp & l3-agent scalable over two nodes and pacemakercluster to monitor & control network services 
-
+* quantum-dhcp & l3-agent scalable over two nodes and pacemakercluster
+  to monitor & control network services
 
 ## Highly available OpenStack services and APIs
 
 !picture pacemaker!
 
-#### Pacemakercluster with two controller nodes to bring horizon, keystone, glance, nova, rabbitmq, quantum-server & mysql database everytime online
+* Pacemaker cluster with two controller nodes to bring horizon,
+  keystone, glance, nova, rabbitmq, quantum-server & mysql database
+  everytime online
 
 !picture HA-Controller-Nodes! 
 
@@ -114,8 +116,9 @@ Must start with high availability at the base of the system (IaaS)
 
 ## Highly available Nova guests
 
-#### to bring high availability in all services, we lets run instances in ceph-cluster too
-#### pacemaker cluster for nova services 
+* to bring high availability in all services, we lets run instances in
+  ceph-cluster too
+* pacemaker cluster for nova services 
 
 !picture HA-Compute-Node!
 
@@ -124,9 +127,6 @@ Must start with high availability at the base of the system (IaaS)
 3. own pool in ceph-cluster 
 4. need good network connection to storages
 5. 6 x 1GBit/s Ports on every compute
-
-
-
 
 # How did this affect our organization?
 
