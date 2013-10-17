@@ -19,8 +19,8 @@ Solution from pixelpark`s high availability private Cloud
 ## Sebastian Kachel 
 	
 IT Cloud-Manager / IT Operator
-![pixelpark-logo][1]
-[1]:logo-pixelpark.png "logo-pixelpark.png"
+
+![Pixelpark logo](logo-pixelpark.png "Pixelpark logo")
 
 seasoned Unix/Linux sysadmin/devops guy who became involved in OpenStack in 2012, when his company decided to lauch an OpenStack private cloud. Based in Berlin, Germany, he is one of the movers and shakers of all things OpenStack at Pixelpark
 
@@ -40,8 +40,7 @@ musst start with hight availability in base (IaaS)
 ##### full-service agency for multimedial kommunications & e-business solutions
 **departments:** konception, project management, editorial, design, development & hosting
 
-![pixelpark-standorte][2]
-[2]: pp-standorte.png "pixelpark-standorte"
+![Pixelpark locations](pp-standorte.png "Pixelpark office locations")
 
 ##### hosting department needs benefits of cloud computing (automation & process optimization, standardization, … )
 
