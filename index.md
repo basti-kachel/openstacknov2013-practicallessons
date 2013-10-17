@@ -20,9 +20,14 @@ Solution from pixelpark`s high availability private Cloud
 	
 IT Cloud-Manager / IT Operator
 
-![Pixelpark logo](logo-pixelpark.png "Pixelpark logo")
+![](logo-pixelpark.png)
 
-seasoned Unix/Linux sysadmin/devops guy who became involved in OpenStack in 2012, when his company decided to lauch an OpenStack private cloud. Based in Berlin, Germany, he is one of the movers and shakers of all things OpenStack at Pixelpark
+Seasoned Unix/Linux sysadmin/devops guy who became involved in
+OpenStack in 2012, when his company decided to lauch an OpenStack
+private cloud. 
+
+Based in Berlin, Germany, he is one of the movers and shakers of all
+things OpenStack at Pixelpark.
 
 	
 ## Florian Haas
@@ -31,28 +36,35 @@ TODO: Add a few works about Florian
 
 # What was our challenge to solve?
 
-### We musst bring hight availability in all services that we want use for our customers
+## Ensure high availability for all services that we want use for our customers
 
-musst start with hight availability in base (IaaS)
+Must start with high availability at the base of the system (IaaS)
 
-#### Why OpenStack?
+# Why OpenStack?
 
-### Pixelpark AG 
+## Pixelpark AG 
 	
-##### full-service agency for multimedial kommunications & e-business solutions
-**departments:** konception, project management, editorial, design, development & hosting
+### Full-service agency for multimedia communications & e-business solutions
+	
+**departments:** concepts, project management, editorial, design,
+  development & hosting
 
-![Pixelpark locations](pp-standorte.png "Pixelpark office locations")
+![](pp-standorte.png)
 
-##### hosting department needs benefits of cloud computing (automation & process optimization, standardization, … )
+## Challenges
 
-##### cloud software that is/become more than IaaS, that can be use by other departments like development
+* Hosting department needs benefits of cloud computing (automation &
+  process optimization, standardization, … )
+  
+* cloud software that is/become more than IaaS, that can be use by
+  other departments like development
 
-We think, OpenStack is the best base for Pixelpark as a full-service agency
+* OpenStack is the best base for Pixelpark as a full-service agency
 
-##### Why high available ?
+## Why high availability ?
 
-### We provide our customers service level agreement with high availability up to 99,99 %.  
+* We provide our customers service level agreement with high
+  availability up to 99,99 %.
 
 
 # How did we do it?
