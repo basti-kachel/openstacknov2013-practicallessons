@@ -56,7 +56,7 @@ Must start with high availability at the base of the system - **IaaS**
 * Hosting department needs benefits of cloud computing
   
 * cloud software that is/become more than IaaS, that can be use by
-  other departments like development
+  other departments
 
 * OpenStack is the best base for Pixelpark as a full-service agency
 
@@ -81,7 +81,7 @@ Must start with high availability at the base of the system - **IaaS**
 
 * storage to store data with no datalost
 
-* store cinder volumes, glance images, static data (S3) over radosgw & instances
+* store: cinder volumes, glance images, static data (S3) over radosgw & instances
  
 ![](img/ha-storage.png)
 
@@ -125,9 +125,7 @@ Must start with high availability at the base of the system - **IaaS**
 
 * active-backup (distributed)
 
-* database in drdb 
-
-* rabbitmg in drdb
+* mysql / rabbitmg stored in drdb 
 
 * Raid 1 under drbd
 
@@ -148,5 +146,7 @@ Must start with high availability at the base of the system - **IaaS**
 5. 6 x 1GBit/s Ports on every compute
 
 # How did this affect our organization?
+
+
 
 # Get in touch!
