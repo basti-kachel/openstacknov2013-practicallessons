@@ -106,11 +106,16 @@ Must start with high availability at the base of the system - **IaaS**
   
 ![](img/ha-network.png)
   
-TODO: add content (explain scalable dhcp+l3)
+* quantum-dhcp active/active over two nodes managed by pacemaker
+
+* quantum-l3-agent active/backup over two nodes managed by pacemaker
+
+* quantum-plugin-openvswitch-agent active/active over two nodes managed by pacemaker
+
 
 ## Highly available OpenStack services and APIs
 
-TODO: add picture pacemaker
+![](img/logo-pacemaker.svg)
 
 * Pacemaker cluster with two controller nodes to bring horizon,
   keystone, glance, nova, rabbitmq, quantum-server & mysql database
@@ -130,11 +135,11 @@ TODO: add picture pacemaker
 ## Highly available Nova guests
 
 * to bring high availability in all services, we lets run instances in
-  ceph-cluster too
+  ceph-cluster, too
   
 * pacemaker cluster for nova services 
 
-TODO: add picture logical functionality of computes 
+![](img/ha-compute.png)
 
 1. rbd mount unter /var/lib/nova/instances
 2. ocfs2 filesystem 
