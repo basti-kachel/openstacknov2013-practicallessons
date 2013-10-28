@@ -87,11 +87,11 @@ TODO: Add a few works about Florian
 
 * working with 3 copies
 
-* Disk per OSD / 6 OSD per Node
+* Disk per OSD
 
 * filesystem xfs
  
-* osd-journaling on seperate ssd
+* journaling on seperate ssd
  
 * storage node with 8 x 1GBit/s Ports in trunk mode
 
