@@ -56,7 +56,7 @@ Must start with high availability at the base of the system - **IaaS**
 * Hosting department needs benefits of cloud computing
   
 * cloud software that is/become more than IaaS, that can be use by
-  other departments
+  other departments like PaaS for development
 
 * OpenStack is the best base for Pixelpark as a full-service agency
 
@@ -82,18 +82,18 @@ Must start with high availability at the base of the system - **IaaS**
 * storage to store data with no datalost
 
 * store: cinder volumes, glance images, static data (S3) over radosgw & instances
- 
-![](img/ha-storage.png)
 
 * ceph is a top base for storage
 
 ## How did we build our Ceph store?
 
+![](img/ha-storage.png)
+
 * working with 3 copies
 
-* filesystem xfs
+* Disk per OSD / 6 OSD per Node
 
-* 1TB Disk per OSD / 6 OSD per Node
+* filesystem xfs
  
 * osd-journaling on seperate ssd
  
@@ -121,7 +121,7 @@ Must start with high availability at the base of the system - **IaaS**
   keystone, glance, nova, rabbitmq, quantum-server & mysql database
   everytime online
   
-![](img/ha-storage.png)
+![](img/ha-controller.png)
 
 * active-backup (distributed)
 
@@ -135,18 +135,28 @@ Must start with high availability at the base of the system - **IaaS**
 * to bring high availability in all services, we lets run instances in
   ceph-cluster, too
   
-* pacemaker cluster for nova services 
+* services are manage by pacemaker  
 
 ![](img/ha-compute.png)
 
-1. rbd mount unter /var/lib/nova/instances
-2. ocfs2 filesystem 
-3. own pool in ceph-cluster 
-4. need good network connection to storages
-5. 6 x 1GBit/s Ports on every compute
+
+* rbd mount under /var/lib/nova/instances
+* own pool in ceph-cluster 
+* ocfs2 filesystem 
+* need good network connection to storages
+* 6 x 1GBit/s Ports on every compute
 
 # How did this affect our organization?
 
+* not easy to implement an openstack environment 
+* good way to got training & support by hastexo 
+* save quality & work efficient
+* further innovation
+* have a top base for comming technologies
+* make fun to work with it
 
 
 # Get in touch!
+
+
+# Thank you !
