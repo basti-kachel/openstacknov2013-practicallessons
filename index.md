@@ -97,7 +97,7 @@ TODO: Add a few works about Florian
 
 ## Highly available networking
 
-* quantum-dhcp & l3-agent scalable over two nodes and pacemakercluster
+* quantum-dhcp-agent & quantum-l3-agent scalable over two nodes and pacemakercluster
   to monitor & control network services
   
 ![](img/ha-network.png)
