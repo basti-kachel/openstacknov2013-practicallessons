@@ -38,8 +38,6 @@ TODO: Add a few works about Florian
 
 ## Ensure high availability for all services that we want use for our customers
 
-Must start with high availability at the base of the system - **IaaS**
-
 # Why OpenStack?
 
 ## Pixelpark AG 
@@ -48,8 +46,6 @@ Must start with high availability at the base of the system - **IaaS**
 	
 **departments:** concepts, project management, editorial, design,
   development & hosting
-
-![](img/pp-standorte.png)
 
 ## Challenges
 
