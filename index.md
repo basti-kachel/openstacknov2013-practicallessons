@@ -12,7 +12,8 @@ Get the **sources** on GitHub:
 
 # What's this about?
 
-Solution from pixelpark`s high availability private Cloud 
+**Best Practices** and **Lessons Learned** from pixelpark's Highly
+  Available Private Cloud
 
 # Who are we?
 
