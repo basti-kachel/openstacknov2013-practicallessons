@@ -12,6 +12,8 @@ Get the **sources** on GitHub:
 
 # What's this about?
 
+## What's this about?
+
 **Best Practices** and **Lessons Learned** from pixelpark's Highly
   Available Private Cloud
 
@@ -88,14 +90,12 @@ TODO: Add a few works about Florian
 
 ## Highly available networking
 
-* quantum-dhcp-agent & quantum-l3-agent scalable over two nodes and pacemakercluster
-  to monitor & control network services
-  
 ![](img/ha-network.png)
   
-* quantum-dhcp active/active over two nodes managed by pacemaker
-* quantum-l3-agent active/backup over two nodes managed by pacemaker
-* quantum-plugin-openvswitch-agent active/active over two nodes managed by pacemaker
+* `quantum-dhcp-agent` **active/active** over two nodes
+* `quantum-l3-agent` **active/passive** over two nodes
+* `quantum-plugin-openvswitch-agent` **active/active** over all compute &
+  network nodes
 
 
 ## Highly available OpenStack services and APIs
