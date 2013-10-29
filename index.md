@@ -116,13 +116,14 @@ TODO: Add a few works about Florian
 * MySQL/RabbitMQ stored on DRBD
 * DRBD on RAID-1
 
-
 ## Highly available Nova guests
 
 * Instances store ephemeral data in Ceph, too
 * Pacemaker manages services
 
 ![](img/ha-compute.png)
+
+## Working around limitations in CephFS
 
 * RBD mounts to /var/lib/nova/instances
 * Separate Ceph pool
