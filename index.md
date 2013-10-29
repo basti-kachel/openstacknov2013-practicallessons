@@ -25,13 +25,10 @@ IT Cloud-Manager / IT Operator
 
 ![](img/logo-pixelpark.png)
 
-Seasoned Unix/Linux sysadmin/devops guy who became involved in
-OpenStack in 2012, when his company decided to lauch an OpenStack
-private cloud. 
-
-Based in Berlin, Germany, he is one of the movers and shakers of all
-things OpenStack at Pixelpark.
-
+* Seasoned Unix/Linux sysadmin/devops guy
+* Became involved in OpenStack in 2012
+* Based in Berlin, Germany
+* One of the movers and shakers of all things OpenStack at Pixelpark
 	
 ## Florian Haas
 
