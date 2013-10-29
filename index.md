@@ -85,15 +85,15 @@ TODO: Add a few works about Florian
 
 ![](img/ha-storage.png)
 
-* working with 3 copies
+* Working with 3 copies
 
-* Disk per OSD
+* 1 disk per OSD
 
-* filesystem xfs
+* XFS filesystem
  
-* journaling on seperate ssd
+* Journal on separate SSD
  
-* storage node with 8 x 1GBit/s Ports in trunk mode
+* Storage nodes with 8 x 1GBit/s Ports in trunk mode
 
 ## Highly available networking
 
