@@ -41,8 +41,6 @@ TODO: Add a few works about Florian
 
 ## Ensure high availability for all services that we want use for our customers
 
-# Why OpenStack?
-
 ## Pixelpark AG 
 	
 ### Full-service agency for multimedia communications & e-business solutions
