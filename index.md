@@ -65,21 +65,21 @@ TODO: Add a few works about Florian
 
 ## Highly available storage
 
-* Highly available storage as base as data store to bring it 
-
-* scalable 
+* Highly available storage as base data store to make it scale
 
 ![](img/logo-ceph.png)
 
 ## Why Ceph?
 
-* Ceph is a distributed object store and file system designed to provide excellent  performance, reliability and scalability
+* Ceph is a distributed object store and file system designed to
+  provide excellent performance, reliability and scalability
 
-* storage to store data with no datalost
+* Guarantees reliable storage with no data loss
 
-* store: cinder volumes, glance images, static data (S3) over radosgw & instances
+* Stores: Cinder volumes, Glance images, static data (S3) over radosgw
+  & instances
 
-* ceph is a top base for storage
+* Ceph is an excellent, reliable basis for cloud storage
 
 ## How did we build our Ceph store?
 
