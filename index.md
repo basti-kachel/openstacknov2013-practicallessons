@@ -131,13 +131,14 @@ TODO: Add a few works about Florian
 
 # How did this affect our organization?
 
-* not easy to implement an openstack environment 
-* good way to got training & support by hastexo 
-* save quality & work efficient
-* further innovation
-* have a top base for comming technologies
-* make fun to work with it
+## Lessons Learned from a Production OpenStack Implementation
 
+* Implementing an OpenStack environment is a **challenge**
+* Getting **training and support** is a good idea
+* Ensure **quality,** work **efficiently**
+* Create a basis for **further innovation**
+* Be ready for up & coming **technology**
+* **Have fun!**
 
 # Get in touch!
 
