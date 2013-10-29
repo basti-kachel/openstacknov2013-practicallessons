@@ -57,8 +57,8 @@ TODO: Add a few works about Florian
 
 ## Why high availability ?
 
-* We provide our customers service level agreement with high
-  availability up to 99,99 %.
+* Business need
+* We provide our customers SLAs with availability up to 99,99%.
 
 # How did we do it?
 
