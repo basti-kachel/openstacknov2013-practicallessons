@@ -106,9 +106,7 @@ TODO: Add a few works about Florian
 
 * Runs horizon, keystone, glance, nova, rabbitmq, quantum-server & mysql database
 
-------------------
-
-### Pacemaker managed services on API nodes
+## Pacemaker managed services on API nodes
 
 ![](img/ha-controller.png)
 
