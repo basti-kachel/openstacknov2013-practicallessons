@@ -80,9 +80,9 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/* For slides, w use an all-around padding of 2% of the viewport. */
+/* For slides, w use an all-around padding of 10% of the viewport. */
 div.slide {
-  padding: 2% !important;
+  padding: 10% !important;
 }
 
 /* The toolbar at the bottom of the slide and all links use the same
