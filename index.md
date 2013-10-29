@@ -115,18 +115,16 @@ TODO: Add a few works about Florian
 
 ## Highly available Nova guests
 
-* to bring high availability in all services, we lets run instances in
-  ceph-cluster, too
-  
-* services are manage by pacemaker  
+* Instances store ephemeral data in Ceph, too
+* Pacemaker manages services
 
 ![](img/ha-compute.png)
 
-* rbd mount under /var/lib/nova/instances
-* own pool in ceph-cluster 
-* ocfs2 filesystem 
-* need good network connection to storages
-* 6 x 1GBit/s Ports on every compute
+* RBD mounts to /var/lib/nova/instances
+* Separate Ceph pool
+* OCFS2 filesystem
+* Requires good network connection to storage nodes
+* 6 x 1GBit/s Ports on every compute node
 
 # How did this affect our organization?
 
