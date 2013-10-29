@@ -50,10 +50,8 @@ TODO: Add a few works about Florian
 ## Challenges
 
 * Hosting department needs benefits of cloud computing
-  
 * cloud software that is/become more than IaaS, that can be use by
   other departments like PaaS for development
-
 * OpenStack is the best base for Pixelpark as a full-service agency
 
 ## Why high availability ?
@@ -66,19 +64,15 @@ TODO: Add a few works about Florian
 ## Highly available storage
 
 * Highly available storage as base data store to make it scale
-
 ![](img/logo-ceph.png)
 
 ## Why Ceph?
 
 * Ceph is a distributed object store and file system designed to
   provide excellent performance, reliability and scalability
-
 * Guarantees reliable storage with no data loss
-
 * Stores: Cinder volumes, Glance images, static data (S3) over radosgw
   & instances
-
 * Ceph is an excellent, reliable basis for cloud storage
 
 ## How did we build our Ceph store?
@@ -86,13 +80,9 @@ TODO: Add a few works about Florian
 ![](img/ha-storage.png)
 
 * Working with 3 copies
-
 * 1 disk per OSD
-
 * XFS filesystem
- 
 * Journal on separate SSD
- 
 * Storage nodes with 8 x 1GBit/s Ports in trunk mode
 
 ## Highly available networking
@@ -103,9 +93,7 @@ TODO: Add a few works about Florian
 ![](img/ha-network.png)
   
 * quantum-dhcp active/active over two nodes managed by pacemaker
-
 * quantum-l3-agent active/backup over two nodes managed by pacemaker
-
 * quantum-plugin-openvswitch-agent active/active over two nodes managed by pacemaker
 
 
@@ -120,9 +108,7 @@ TODO: Add a few works about Florian
 ![](img/ha-controller.png)
 
 * active-backup (distributed)
-
 * mysql / rabbitmg stored in drdb 
-
 * Raid 1 under drbd
 
 
@@ -134,7 +120,6 @@ TODO: Add a few works about Florian
 * services are manage by pacemaker  
 
 ![](img/ha-compute.png)
-
 
 * rbd mount under /var/lib/nova/instances
 * own pool in ceph-cluster 
