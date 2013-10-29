@@ -100,17 +100,17 @@ TODO: Add a few works about Florian
 
 ## Highly available OpenStack services and APIs
 
+### 2 controller nodes in Pacemaker cluster
+
 ![](img/logo-pacemaker.svg)
 
-* Pacemaker cluster with two controller nodes to bring horizon,
-  keystone, glance, nova, rabbitmq, quantum-server & mysql database
-  everytime online
+* Runs horizon, keystone, glance, nova, rabbitmq, quantum-server & mysql database
   
 ![](img/ha-controller.png)
 
-* active-backup (distributed)
-* mysql / rabbitmg stored in drdb 
-* Raid 1 under drbd
+* Active/passive (distributed)
+* MySQL/RabbitMQ stored on DRBD
+* DRBD on RAID-1
 
 
 ## Highly available Nova guests
