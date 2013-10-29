@@ -105,7 +105,11 @@ TODO: Add a few works about Florian
 ![](img/logo-pacemaker.svg)
 
 * Runs horizon, keystone, glance, nova, rabbitmq, quantum-server & mysql database
-  
+
+------------------
+
+### Pacemaker managed services on API nodes
+
 ![](img/ha-controller.png)
 
 * Active/passive (distributed)
