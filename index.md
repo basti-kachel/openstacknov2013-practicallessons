@@ -32,7 +32,10 @@ IT Cloud-Manager / IT Operator
 	
 ## Florian Haas
 
-TODO: Add a few works about Florian
+* HA/Storage/Cloud guy, consultant, instructor
+* hastexo co-founder & CEO
+* Based in seat 10C, Economy Class
+* Occasionally returns to home base near Vienna, Austria
 
 # What was our challenge to solve?
 
