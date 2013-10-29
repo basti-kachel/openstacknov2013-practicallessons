@@ -140,5 +140,9 @@ IT Cloud-Manager / IT Operator
 
 # Get in touch!
 
+## Contact Details
+
+* <sebastian.kachel@pixelpark.com>
+* <florian.haas@hastexo.com>
 
 # Thank you !
