@@ -56,7 +56,11 @@ body {
   color: white !important;
 
   padding-bottom: 20%
+
+  width: 100%;
+  height: 80%;
 }
+
 
 /* By default, headings are light green. */
 h1, h2, h3, h4, h5, h6 {
@@ -70,6 +74,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* And the same applies to chapter titles. */
 .level1 h1, .level1 h2, .level1 h3, .level1 h4, .level1 h5, .level1 h6 {
+  text-align: center;
+  padding-top: 15% !important;
+
   color: white;
 }
 
