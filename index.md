@@ -145,4 +145,4 @@ IT Cloud-Manager / IT Operator
 * <sebastian.kachel@pixelpark.com>
 * <florian.haas@hastexo.com>
 
-# Thank you !
+# Thank you!
