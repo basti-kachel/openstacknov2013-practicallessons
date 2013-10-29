@@ -125,7 +125,7 @@ TODO: Add a few works about Florian
 
 ## Working around limitations in CephFS
 
-* RBD mounts to /var/lib/nova/instances
+* RBD mounts to `/var/lib/nova/instances`
 * Separate Ceph pool
 * OCFS2 filesystem
 * Requires good network connection to storage nodes
